@@ -155,9 +155,9 @@ If COCO is stored elsewhere, update the COCO dataset path in the corresponding d
 To generate instability metrics for ResNet-18:
 
 ```bash
-python3 instability_metrics.py --resnet18
+python analysis_cnn.py --model resnet18 --a-bit 4
 ```
-Use the corresponding model option for the other supported classification models.
+Use the corresponding model option from the other supported classification models. Use 8 to generate W4A8 instability metric
 
 Supported classification models:
 
@@ -171,7 +171,12 @@ vgg16
 vgg19
 ```
 ### 4.2 Object Detection
+To generate instability metrics for ssd300_vgg16:
 
+```bash
+python analysis_object.py --model ssd300_vgg16 --a-bit 4
+```
+Use the similar approach like classification model different configuration . Other Supported models are:
 ```text
 ssd300_vgg16
 retinanet_resnet50_fpn

@@ -256,7 +256,7 @@ Change `early` to `late` or `random` to reproduce the corresponding ablation.
 Run the object-detection ablation using:
 
 ```bash
-python3 ablation_location_object.py --model ssd300_vgg16 --location early --weight-bits 4  --activation-bits 8
+python3 ablation_location_detection.py --model ssd300_vgg16 --location early --weight-bits 4  --activation-bits 8
 ```
 Supported object-detection models:
 

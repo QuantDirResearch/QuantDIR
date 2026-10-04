@@ -123,7 +123,7 @@ annotations_trainval2017.zip
 Create the COCO directory:
 
 ```bash
-mkdir -p data/test_dataset/coco
+mkdir -p data/coco
 ```
 
 Extract the validation images:
